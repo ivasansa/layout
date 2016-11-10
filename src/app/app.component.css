@@ -1,4 +1,13 @@
 h1 {
   color: red; }
 
+ul {
+  list-style: none; }
+
+#div1 {
+  width: 350px;
+  height: 70px;
+  padding: 10px;
+  border: 1px solid #aaaaaa; }
+
 /*# sourceMappingURL=app.component.css.map */
