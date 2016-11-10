@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ta en panga!';
+  items = [1,2,3];
+
 }
+
