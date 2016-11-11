@@ -10,21 +10,25 @@ export class AppComponent {
   items = [1,2,3];
 
 
-  public allowDrop(ev) {
+  allowDrop(ev) {
    ev.preventDefault();
+    console.log("allowDrop");
   }
 
-  public drag(ev) {
+  drag(ev) {
     ev.dataTransfer.setData("text", ev.target.id);
+    console.log("drago");
   }
 
-  public drop(ev) {
+  drop(ev) {
     ev.preventDefault();
     var data = ev.dataTransfer.getData("text");
+
     ev.target.appendChild(document.getElementById(data));
+
   }
-  public click(){
-    alert("hola");
+  click(){
+    this.title = "click";
   }
 }
 

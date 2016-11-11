@@ -1,14 +1,15 @@
 <h1 onClick="click()">
   {{title}}
 </h1>
-<ul>
+<ul  id="div5" (drop)="drop($event)" (dragover)="allowDrop($event)">
   <li *ngFor="let item of items">
-    <div draggable="true" ondragstart="drag(event)">
+    <div id="drag2" draggable="true" (dragstart)="drag($event)">
       <h2>{{item}}</h2>
     </div>
   </li>
 </ul>
-<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<img id="drag1" src="http://www.w3schools.com/html/img_logo.gif" draggable="true" (dragstart)="drag($event)" width="336" height="69">
+<div id="div1" (drop)="drop($event)" (dragover)="allowDrop($event)"></div>
 
-
+<button draggable="true" (dragstart)="drag($event)">hola</button>
 
